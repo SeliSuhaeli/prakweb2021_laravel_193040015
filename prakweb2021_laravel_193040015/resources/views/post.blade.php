@@ -1,10 +1,9 @@
 @extends('layouts.main')
 
 @section('container')
-  <article>
-    <h2>{{ $post["title"] }}</h2>
-    <p>{{ $post["body"] }}</p>
-  </article>
+    <h1 class="mb-5">{{ $post->title }}</h1>
 
-  <a href="/blog">Back to Posts</a>
+    {!! $post->body !!}
+
+  <p><a href="/blog">Back to Posts</a></p>
 @endsection
